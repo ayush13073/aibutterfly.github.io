@@ -1,6 +1,25 @@
 body {
-    background-color:#f0f0f0;
+    background-color:#f1f2f2;
+}
+.text{
+    font-weight:500;
+    color:black;
     
+}
+.border{
+    border:1px solid rgba(0,0,0,0.6);
+    border-radius:0px;
+    border-left:white;
+    border-right:white;
+    font-weight:100;
+}
+.text2{
+    background-color:rgba(187,0,51,0.3);
+    color:black;
+    font-weight:900;
+}
+.divider{
+    border:1px solid white;
 }
 .quotes{
     margin:15px;
@@ -49,4 +68,8 @@ body {
     font-weight: 700;
     line-height: 10px;
     text-align: right;
+}
+.quote{
+    background-color:#f1f2f2;
+    margin-bottom:13%;
 }
