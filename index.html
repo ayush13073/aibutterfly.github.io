@@ -1177,7 +1177,13 @@ width:300px; height:345px; background: white; float:left; " allowtransparency="t
         <script src="js/aos.js"></script>
         <!-- Animate numbers increment -->
         <script>
-            AOS.init();
+            window.onload = ()=>{
+   
+    AOS.init({
+    duration: 1000,
+    delay: 5,
+    });
+    }
         </script>
         
         <script>
