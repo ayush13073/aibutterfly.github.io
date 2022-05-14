@@ -14,18 +14,10 @@ window.onload = ()=>{
     });
     }
 $(document).ready(function(){
-    $(".skill-c").click(function(){
-        $(".quote").hide();
+    $(".log-in").click(function(){
+        $(".home").hide();
     });
-    $(".skill-c").click(function(){
-        $(".skill").show();
+    $(".log-in").click(function(){
+        $(".login-form,nav-form").show();
     });
 });
-$(document).ready(function(){
-    $(".Quotes-c").click(function(){
-        $(".skill").hide();
-    });
-    $(".Quotes-c").click(function(){
-        $(".quote").show();
-    });
-}); 
