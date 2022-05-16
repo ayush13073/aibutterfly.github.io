@@ -73,7 +73,7 @@ if(empty($username_err) && empty($password_err) && empty($confirm_password_err))
         // Try to execute the query
         if (mysqli_stmt_execute($stmt))
         {
-            header("location: login.php");
+            header("location: index.php");
         }
         else{
             echo "Something went wrong... cannot redirect!";
