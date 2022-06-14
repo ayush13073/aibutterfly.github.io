@@ -1,9 +1,8 @@
-* {
-     margin:0px;
-     padding:0px;
-} 
 body {
     background-color:#f1f2f2;
+}
+.div{
+    color:white;
 }
 .text{
     font-weight:500;
@@ -28,10 +27,10 @@ body {
 .quotes{
     margin:15px;
 }
-.heading{
+.heading1{
     
     text-align:center;
-    position:relative;
+    position:inline;
     box-shadow:20px 20px 30px rgba(0,0,0,0.6);
     font-weight:800;
     border-radius:8px;
@@ -42,7 +41,7 @@ body {
     border:1px solid #fff;
     border-left-color:none;
 }
-.box {
+.box1 {
     -webkit-backdrop-filter: blur(12px);
             backdrop-filter: blur(12px);
     position: relative;
@@ -52,7 +51,8 @@ body {
     border-radius: 17px;
     margin-top:10%;
     margin-left:2%;
-    
+    position:inline;
+    display:inline-block;
     background-color:#fff;
     
 }
@@ -76,10 +76,15 @@ body {
 .quote{
     background-color:#f1f2f2;
     margin-bottom:13%;
+    position:inline;
+}
+{
+    display:inline-block;
 }
 .skill{
     background-color:#2A2A2A;
     display:none;
+    
 }
 .box{
     color:red;
@@ -153,4 +158,3 @@ img{
     display:inline-block;
     
 }
-
