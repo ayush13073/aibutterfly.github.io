@@ -78,7 +78,7 @@ body {
     margin-bottom:13%;
     position:inline;
 }
-{
+*{
     display:inline-block;
 }
 .skill{
