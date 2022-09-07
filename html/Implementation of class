@@ -22,7 +22,7 @@ void main()
 {
     clrscr();
     ratio r1;   //constructor gets invoked
-    r.ratiox(); // member function gets invoked
+    r1.ratiox(); // member function gets invoked
     getch();
 }
 
