@@ -23,7 +23,7 @@ void ratio::display() //member function definition outside the class or header
 {
     cout<<"The ratio is: "<< r << endl;
 }
-vold ratio::value() //member function definition outside the class or header
+void ratio::value() //member function definition outside the class or header
 {
     cout<<"Enter denominator" << endl;
     cin>>den;
