@@ -1,0 +1,53 @@
+#include <iostream.h>
+#include <conio.h>
+
+class complex
+{
+    int real, imag;
+    public:
+        complex()
+        {}
+        complex(int real, int imag)
+        {
+            real = real;
+            imag = imag;
+        }
+        complex operator + (complex);
+        void display(void);
+};
+complex complex::operator + (complex c)
+{
+    complex t;
+    t.real = real + c.real;
+    t.imag = imag + c.imag;
+    return(t);
+}
+void complex::display(void)
+{
+    cout << real << "+" << imag << "i\n";
+}
+void main()
+{
+    complex C1, C2, C3;
+    int p, q, r, s;
+    clrscr();
+    cout << "Enter the real part of first number :";
+    cin >> p;
+    cout << "Enter the imaginary part of first number :";
+    cin >> q;
+    cout << "Enter the real part of second number :";
+    cin >> r;
+    cout << "Enter the imaginary part of second number :";
+    cin >> s;
+    C1 = complex(p, q);
+    C2 = complex(r, s);
+    C3 = C1 + C2;
+    cout << "Result : " << endl;
+    cout << "The first complex number is : ";
+    C1.display();
+    cout << "The Second complex is : ";
+    C2.display();
+    cout << "The addition of complex numbers is : ";
+    C3.display();
+    getch();
+}
