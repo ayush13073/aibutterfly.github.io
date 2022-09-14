@@ -1,0 +1,44 @@
+#include <iostream.h>
+#include <conio.h>
+
+class complex
+{
+    float realp;
+    float imagp;
+    public: void getdata();
+            void sum (complex C1, complex C2);
+            void output();
+};
+void complex::getdata()
+{
+    cout << "Enter real part : ";
+    cin >> realp;
+    cout << "Enter imag part : ";
+    cin >> imagp;
+}
+void complex::sum(complex C1, complex C2)
+{
+    realp = C1.realp + C2.realp;
+    imagp = C1.imagp + C2.imagp;
+}
+void complex::output()
+{
+    cout << realp << " + i" << imagp << endl;
+}
+void main()
+{
+    complex x, y, z;
+    clrscr();
+    cout << "Enter first complex no. : " << endl;
+    x.getdata();
+    cout << "Enter second complex no. :" << endl;
+    y.getdata();
+    z.sum(x, y);
+    cout << "First number : " << endl;
+    x.output();
+    cout << "Second number : " << endl;
+    y.output();
+    cout << "Sum of two number : " << endl;
+    z.output();
+    getch();
+}
