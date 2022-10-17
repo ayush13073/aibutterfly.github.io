@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        /*.hearts{
+    position:relative;
+   filter:drop-shadow(0  0 20px deeppink); background:url("https://i.ibb.co/vvtHwDL/image-3.png");
+    background-size:cover;
+    z-index:1;
+    top:90px;
+    left:0;
+    height:100px;
+    width:100px;
+}*/
+.heart{
+    position:absolute;
+    height:70px;
+    width:70px;
+    font-size:30px;
+    top:120px;
+    filter:drop-shadow(1px  1px 10px red);
+    animation:5s blinker infinite ;
+}
+.heart:nth-child(1){
+    position:relative;
+    animation-delay:.3s;
+    left:300px;
+}
+.heart:nth-chid(2){
+    position:relative;
+    animation-delay:.5s;
+    left:200px;
+}
+.heart:nth-child(3){
+    position:relative;
+   animation-delay:.7s;
+   left:140px;
+}
+@keyframes blinker{
+  10% {opacity: 1.0;
+       top:70px;
+  }
+  100%{opacity: 0.0;
+  top:5px;
+  }
+}
+    </head>
+    <body>
+        <div class="heart">💓</div>
+        <div class="heart">💓</div>
+        <div class="heart">💓</div>
+    </body>
+</html>
