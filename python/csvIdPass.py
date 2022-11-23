@@ -1,6 +1,6 @@
 import csv
+
 def write():
-    # ch = 'Y'
     f = open("details.csv", "w", newline='')
     wo = csv.writer(f)
     wo.writerow(["UserId", "Password"])
@@ -20,7 +20,6 @@ def read():
     for i in ro:
         print(i)
     f.close()
-
 def search():
     f = open("details.csv", "r")
     Found = 0
