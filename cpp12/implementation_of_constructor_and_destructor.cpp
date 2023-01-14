@@ -1,0 +1,52 @@
+// implementation_of_constructor_and_destructor
+#include<iostream.h>
+#include<conio.h>
+
+class ratio
+{
+    int num, den;
+    double r;
+    public:
+        ratio() //default constructor definition
+        {
+            num = 0;
+            den = 0;
+            r = 0;
+        }
+        ratio (int a) //parameterised constructor definition
+        {
+            num = a;
+        }
+    void value(); //member function declaration or prototype 
+    void display(); //member function declaration or prototype
+};
+void ratio::display() //member function definition outside the class or header
+{
+    cout<<"The ratio is: "<< r << endl;
+}
+void ratio::value() //member function definition outside the class or header
+{
+    cout<<"Enter denominator" << endl;
+    cin>>den;
+    r =(double)num/den;
+}
+void main()
+{
+    clrscr();
+    int x;
+    ratio r1; //default constructor is invoked
+    cout<<"Enter numerator"<<endl;
+    cin>>x;
+    ratio r2 = ratio(x); //parameterised constructor gets invoked
+    r2.value(); //invokes function value()         
+    r2.display(); //Invokes function display()
+    getch();
+}
+/*
+Output
+Enter numerator
+12
+Enter denominator
+6
+The ratio is: 2
+*/

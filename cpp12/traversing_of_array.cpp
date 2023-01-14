@@ -1,0 +1,35 @@
+// traversing_of_array
+#include <iostream.h>
+#include <conio.h>
+
+void main()
+{
+    clrscr();
+    double num[5] = {2, 4, 6, 8, 10};       //array intialisation
+    double *p;                              //declaration  of pointer
+    p = &num[0];                            //store address of first element
+    int sum = 0, i = 0;
+    for (i = 0; i < 5; i++)
+    {
+        sum = sum + num[i];                 //stores sum
+        cout << num[i] << " is at location: " << (i + 1) << "\tsum = " << sum << endl;
+        cout << "Address: " << &num[i] << endl;
+        p++;
+    }
+    cout << "Size of double : " << sizeof(double) << " bytes" << endl;
+    getch();
+}
+/*
+Output
+2 is at location: 1     sum = 2
+Address: 0x8f47ffca
+4 is at location: 2     sum = 6
+Address: 0x8f47ffd2                                                             
+6 is at location: 3     sum = 12
+Address: 0x8f47ffda                                                             
+8 is at location: 4     sum = 20
+Address: 0x8f47ffe2
+10 is at location: 5    sum = 30                                                
+Address: 0x8f47ffea
+Size of double : 8 bytes
+*/
